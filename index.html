@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>Welcome</title>
+    <!-- Load style sheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <style>
+        h3,
+        p {
+            word-break: break-word;
+            text-align: center;
+        }
+        
+        #mainColumn {
+            background-color: rgb(224, 233, 233);
+        }
+    </style>
+
+    <!-- <script>
+        var blocks;
+        var numBlocks = 27;
+        localStorage.setItem("numBlocks", numBlocks);
+
+        $(document).ready(function() {
+            // Your code here.
+            console.log("in ready function");
+            blocks = document.getElementById("blocks");
+        });
+
+        // Button Events
+        $(document).on('click', ".btn", function(evt) {
+            // Your code here.
+            var target = evt.target.id;
+            if (target == "start") {
+                console.log("Start clicked");
+                if (blocks.value != "" && blocks.value > 0 && blocks.value < 27) {
+                    numBlocks = blocks.value;
+                    console.log(numBlocks);
+                }
+                localStorage.setItem("numBlocks", numBlocks);
+                window.location = 'experiment.html';
+            }
+        });
+    </script> -->
+</head>
+
+<body>
+    <div class="container">
+        <br>
+        <div class="row">
+            <div class="col-md-2" id="firstColumn"></div>
+            <div class="col-md-8 text-center" id="mainColumn">
+                <br><br>
+                <h3>The bubble cursor: enhancing target acquisition by dynamic resizing of the cursor's activation area</h3>
+                <br>
+                <p>
+                    Welcome to the Bubble Cursor Experiment.
+                </p>
+                <p>
+                    This experiment will take no more than 30 minutes. To start each trial, click on the single green circle. During each trial in the experiment, you will see a circle green in color, that is your target circle. Kindly click on the target as fast as possible.
+                    Throughout the experiment, you will be informed about your progress at the bottom of the screen.
+                </p>
+                <!-- <p>
+                    If you want the number of blocks lesser than 27, then please enter the value in the feild below. Otherwise leave it blank. Please click on start whenever you are ready.
+                </p> -->
+                <p>
+                    Thank you for your participation.
+                </p>
+                <!-- <form action="">
+                    No. of blocks: <input type="number" id="blocks" value="" style="width: 50px;" maxlength="2">
+                </form> -->
+                <!-- <input class="btn btn-success btn" type="button " id="start" value="Start"> -->
+                <a class="btn btn-success" id="start" href="experiment.html" role="button">Start</a>
+                <br><br><br>
+            </div>
+            <div class="col-md-2 " id="lastColumn "></div>
+        </div>
+    </div>
+</body>
+
+</html>
