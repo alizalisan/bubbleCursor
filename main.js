@@ -375,9 +375,15 @@ function draw() {
     var trials = [];
 
     var canvas = document.getElementById('canvas');
+    var context = canvas.getContext('2d');
+
+    console.log(window.screen.height);
+    console.log(window.screen.width);
+    context.canvas.width = window.screen.width - 10;
+    context.canvas.height = window.screen.height - 200;
+
     canvasWidth = canvas.width;
     canvasHeight = canvas.height;
-    var context = canvas.getContext('2d');
 
     targetX = Math.floor(canvasWidth / 2);
     targetY = Math.floor(canvasHeight / 2);
